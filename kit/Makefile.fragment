@@ -1,0 +1,24 @@
+# Fragmento para o Makefile do projeto novo. Ajuste os comandos; mantenha os nomes,
+# que o protocolo (PROMPT_ClaudeCodeX.md) e o tools/revisao/comandos.txt usam.
+
+secrets-review: ## Segredos nos arquivos rastreados e no .gitignore
+	@python3 tools/secrets/secrets_review.py
+
+secrets-history: ## Varre TODO o histórico por forma de credencial
+	@python3 tools/secrets/secrets_review.py --historico
+
+check-offline: ## Gate rápido, sem serviço de pé: segredos + testes unitários (+ links de docs, se houver)
+	@$(MAKE) --no-print-directory secrets-review
+	@<comando dos testes unitários, ex.: python3 -m pytest -q -m "not integracao">
+
+check: ## Gate completo: segredos, build, testes de dados, artefatos derivados em dia, todos os testes
+	@$(MAKE) --no-print-directory secrets-review
+	@<build e testes de dados>
+	@<conferência de artefatos derivados em dia, se houver>
+	@<todos os testes>
+
+review-dossier: ## Gera REVISAO.md para revisão do intervalo BASE..TOPO
+	@python3 tools/revisao/dossie.py --desde $(BASE) --ate $(TOPO)
+
+review-check: ## Recusa o dossiê com pendência ou verificação falhando
+	@python3 tools/revisao/dossie.py --conferir

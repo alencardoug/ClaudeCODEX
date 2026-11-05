@@ -1,0 +1,4 @@
+# Comandos de verificação deste projeto, um por linha. O dossiê roda cada um, na
+# raiz do repositório, e cola as últimas linhas da saída. Linha com # é ignorada.
+# Declare o gate completo — o que o projeto chama de "pronto". Exemplo:
+# make check
