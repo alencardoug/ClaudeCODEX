@@ -1,4 +1,4 @@
-# ClaudeCodeX
+# ClaudeCODEX
 
 Método para desenvolver com o **Claude Code** e revisar com o **Codex**, cada um
 no seu papel: o Owner decide, o Claude Code implementa e conduz as rodadas, e o
@@ -9,6 +9,12 @@ ser reaproveitado.
 Não é skill nem plugin: é um **prompt** e um **kit** de ferramentas simples.
 
 ## Como usar num projeto novo
+
+Clone em `~/Projetos/claudecodex` — é onde o prompt procura o kit:
+
+```bash
+git clone https://github.com/alencardoug/ClaudeCODEX ~/Projetos/claudecodex
+```
 
 1. Cole o conteúdo de [`PROMPT_ClaudeCodeX.md`](PROMPT_ClaudeCodeX.md) no primeiro
    prompt do Claude Code, no projeto novo. Ele está em inglês e foi escrito para o
@@ -36,5 +42,6 @@ Não é skill nem plugin: é um **prompt** e um **kit** de ferramentas simples.
 
 ## Histórico
 
-Este repositório abrigava o *AstraMax Reviewer* (uma skill de revisão), substituído por
-este método em 05/11/2026. O conteúdo anterior continua no histórico do `git`.
+Este repositório se chamava `astramax` e abrigava o *AstraMax Reviewer* (uma skill de
+revisão), substituído por este método e renomeado para `ClaudeCODEX` em 05/11/2026. O
+conteúdo anterior continua no histórico do `git`; o endereço antigo redireciona para este.

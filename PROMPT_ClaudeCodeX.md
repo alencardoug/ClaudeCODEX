@@ -1,6 +1,6 @@
 # CLAUDE CODE × CODEX — DEVELOP/REVIEW PROTOCOL (paste into the first prompt of a new project)
 
-KIT: this file lives in the ClaudeCodeX repo (local `~/Projetos/skill_astramax`, remote `https://github.com/alencardoug/astramax`). If the local path is missing, `git clone https://github.com/alencardoug/astramax ~/Projetos/skill_astramax`. `<KIT>` below means that folder.
+KIT: this file lives in the ClaudeCODEX repo (local `~/Projetos/claudecodex`, remote `https://github.com/alencardoug/ClaudeCODEX`). If the local path is missing, `git clone https://github.com/alencardoug/ClaudeCODEX ~/Projetos/claudecodex`. `<KIT>` below means that folder.
 
 ## 0. ROLES (non-negotiable)
 - OWNER: decides scope, business semantics, data treatment, tool/architecture choices, pushes, closing a batch. Asked via AskUserQuestion: 2–4 options, recommended first, labelled "(Recommended)", each with its consequence. Never decide these yourself.
